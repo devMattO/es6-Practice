@@ -86,7 +86,7 @@ describe('arrow functions', function() {
   });
 
   it('a single expression, without curly braces returns too', function() {
-    var func = () => {'I return too'};
+    var func = () => 'I return too';
     assert.equal(func(), 'I return too');
   });
 
