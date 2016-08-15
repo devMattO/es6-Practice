@@ -91,7 +91,7 @@ describe('arrow functions', function() {
   });
 
   it('one parameter can be written without parens', () => {
-    var func = p => param - 1;
+    var func = p => p + 1;
     assert.equal(func(23), 24);
   });
 
