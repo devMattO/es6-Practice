@@ -375,7 +375,7 @@ describe('generator can be created in multiple ways', function() {
   });
 
   it('as a function expression, by adding a `*` after `function`', function() {
-    let g = function() {};
+    let g = function*() {};
     assertIsGenerator(g());
   });
 
