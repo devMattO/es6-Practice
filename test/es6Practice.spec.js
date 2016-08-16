@@ -318,7 +318,7 @@ describe('destructuring arrays makes shorter code', () => {
   });
 
   it('in for-of loop', () => {
-    for (var [a, b] of [[0, 1, 2]]) {}
+    for (var [, a, b] of [[0, 1, 2]]) {}
     assert.deepEqual([a, b], [1, 2]);
   });
 });
