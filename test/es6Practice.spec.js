@@ -230,7 +230,7 @@ describe('`Set` lets you store unique values of any type', function(){
     let set = new Set();
     set.add(+0);
     set.add(0);
-    set.add('-0');
+    set.add(-0); //is this right?
 
     assert.deepEqual([...set.values()], [+0]);
   });
