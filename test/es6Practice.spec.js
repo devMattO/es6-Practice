@@ -339,7 +339,7 @@ describe('default parameters make function parameters more flexible', () => {
   });
 
   it('it is not used when a value is given', function() {
-    function xhr() {
+    function xhr(method) {
       return method;
     }
 
