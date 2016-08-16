@@ -370,7 +370,7 @@ describe('default parameters make function parameters more flexible', () => {
 describe('generator can be created in multiple ways', function() {
 
   it('the most common way is by adding `*` after `function`', function() {
-    function g() {}
+    function* g() {}
     assertIsGenerator(g());
   });
 
