@@ -423,7 +423,7 @@ describe('a generator returns an iterable object', function() {
   });
 
   it('a generator returns an object', function() {
-    const typeOfTheGenerator = '';
+    const typeOfTheGenerator = 'object'; //is this right??
     assert.equal(typeof generator, typeOfTheGenerator);
   });
 
