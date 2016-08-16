@@ -332,8 +332,8 @@ describe('default parameters make function parameters more flexible', () => {
   });
 
   it('it is used when undefined is passed', function() {
-    let number = (int = 23) => int;
-    const param = 42;
+    let number = (int = param) => int;
+    const param = 23; //is this right?
 
     assert.equal(number(param), 23);
   });
