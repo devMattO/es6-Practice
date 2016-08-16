@@ -170,7 +170,13 @@ describe('`Map` is a key/value map', function(){
     let map = new Map();
     map.set('1', 'one');
     map.set('2', 'two');
-    const mapAsArray = map; // hint: kata #29 http://tddbin.com/#?kata=es6/language/array-api/from
+    const mapAsArray = []; // hint: kata #29 http://tddbin.com/#?kata=es6/language/array-api/from
+    for (var i = 1; i < map.size + 1; i++) {
+      console.log(map.get(i.toString()));
+      let temp = [];
+      temp.push(`${i.toString()}`,`${map.get(i.toString())}`);
+      mapAsArray.push(temp);
+    }
 
     assert.deepEqual(mapAsArray, [['1', 'one'], ['2', 'two']]);
   });
