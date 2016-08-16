@@ -538,7 +538,7 @@ describe('Symbol', function() {
   });
 
   it('`typeof Symbol()` returns "symbol"', function(){
-    const theType = typeof Symbol;
+    const theType = typeof Symbol();
     assert.equal(theType, 'symbol');
   });
 
