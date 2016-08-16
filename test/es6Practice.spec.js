@@ -213,6 +213,7 @@ describe('`Set` lets you store unique values of any type', function(){
   it('the string "1" is different to the number 1', function() {
     let set = new Set();
     set.add(1);
+    set.add(2);
 
     assert.equal(set.size, 2);
   });
