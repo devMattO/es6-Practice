@@ -352,8 +352,8 @@ describe('default parameters make function parameters more flexible', () => {
       return method;
     }
 
+    defaultValue = 42;
     assert.equal(xhr(), 'value: 42');
-    defaultValue = 23;
   });
 
   it('it can also be a function', function() {
