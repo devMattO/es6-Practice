@@ -521,13 +521,13 @@ describe('generator - `yield` is used to pause and resume a generator function',
 
 describe('Symbol', function() {
   it('`Symbol` lives in the global scope', function(){
-    const expected = document.Symbol;
-    assert.equal(Symbol, expected);
+    const expected = Symbol;
+    assert.equal(Symbol, expected); //??
   });
 
   it('every `Symbol()` is unique', function(){
     const sym1 = Symbol();
-    const sym2 = sym1;
+    const sym2 = Symbol();
     assert.notEqual(sym1, sym2);
   });
 
